@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <title>Document</title>
+    <style>
+        * {box-sizing:border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        ul {
+            list-style-type: none;
+            background-color: rgb(52, 51, 51);
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 14px 10px;
+        }
+        li a:hover {
+            background-color: rgb(248, 52, 52);
+            text-decoration: none;
+            color: white;
+        }
+        .drop:hover .drop_cnt {
+            display: block;
+        }
+        .drop_cnt {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .drop_cnt a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }  
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <img src="logo.jpg" width="100%">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="drop">
+                    <a href="#about" >About Us &#128899;</a>
+                    <div class="drop_cnt">
+                        <a href="#profile">Profile</a>
+                        <a href="#vision">Vision</a>
+                        <a href="#policy">Policy</a>
+                        <a href="#management">Management</a>
+                    </div>
+                </li>
+                <li><a href="#academics">Academics</a></li>
+                <li class="drop">
+                    <a href="#departments" >Departments &#128899;</a>
+                    <div class="drop_cnt">
+                        <a href="#cse">CSE</a>
+                        <a href="#ece">ECE</a>
+                        <a href="#eee">EEE</a>
+                        <a href="#mech">MECHANICAL</a>
+                        <a href="#civil">CIVIL</a>
+                    </div>
+                </li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#terms">T & P</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
